@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+#header{
+    background: rgb(90, 90, 102);
+    height: 100px;
+    width: 100%;
+}
+
+#bodis{
+    background: burlywood;
+    height: 300px;
+    width: 70%;
+    float: left; /* đưa thẻ về phía bên trái  */
+}
+
+#sidebar{
+    background: blueviolet;
+    height: 300px;
+    width: 30%;
+    float: right; /* đưa thẻ về phía bên phải  */
+}
+
+#footer{
+    background: black;
+    height: 100px;
+    width: 100%;
+    clear: both; /* không cho các thẻ khác xuất hiện chèn ở 2 đầu trên & dưới của thẻ  */
+}
