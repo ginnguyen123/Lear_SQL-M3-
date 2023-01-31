@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Sử dụng Bootstrap xây dựng form login
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <form role="form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name">
+        </div>
+
+        <div class="form-group">
+            <label for="inputfile">File input</label>
+            <input type="file" id="inputfile">
+            <p class="form-text">Example block-level help text here.</p>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox">
+                Check me out
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+    <div>
+        <a>In-line</a>
+    </div>
+
+    <form class = "form-inline" role = "form">
+   
+        <div class = "form-group">
+           <label class = "sr-only" for = "name">Name</label>
+           <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+        </div>
+        
+        <div class = "form-group">
+           <label class = "sr-only" for = "inputfile">File input</label>
+           <input type = "file" id = "inputfile">
+        </div>
+        
+        <div class = "checkbox">
+           <label><input type = "checkbox"> Check me out</label>
+        </div>
+        
+        <button type = "submit" class = "btn btn-default">Submit</button>
+     </form>
+    <div>
+        <a>Gird System</a>
+    </div>
+    <form class="form-row" role="form">
+        <div class="form-group">
+            <label for="firstname" class="col-md-2 col-form-label">firstname</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="lastname" placeholder="last name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname" class="col-md-2 col-form-label">Last name</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="offset-sm-2 col-md-10">
+                <div class="checkbox">
+                    <label>
+                        <div><input type="checkbox">Remember me</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="offset-sm-2 col-md-10">
+                <button type="submit" class="btn btn-secondary">Sign in</button>
+            </div>
+        </div>
+    </form>
+    
+    <div>
+        <h3>Phần tử Checkbox và Radio button</h3>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">Option 1
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">Option 2
+        </label>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Option 1
+        </label>
+    </div>
+    
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>Option 2
+        </label>
+    </div>
+
+    <div>
+        <h3>Phần tử select 
+        </h3>
+    </div>
+    <form role="form">
+        <div class="form-group">
+            <label for="name">Select list</label>
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <label for="name">Mutiple Select list</label>
+        <select multiple class="form-control">
+            <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+        </select>
+    </form>
+
+    <div>
+        <h3>Các form-control tĩnh 
+        </h3>
+    </div>
+    <form role="form" class="row">
+        <div class="form-group">
+            <label class="col-md-2 col-form-label">Email</label>
+            <div class="col-md-10">
+                <p class="form-control-static">email@example.com</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 col-form-label">Password</label>
+            <div class="col-md-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </form>
+    <div>
+        <h3>Trạng thái các phần tử 
+        </h3>
+    </div>
+
+    <form class="" role="form">
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 col-form-label">Focused</label>
+            <div class="col-md-10">
+                <input class="form-control" id="focusedInput" type="text" value="This is focused...">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 col-form-label">Disabled</label>
+            <div class="col-md-10">
+                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
+            </div>
+        </div>
+
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="inputPassword" class="col-md-2 col-form-label">Disabled input (Fieldset disabled)</label>
+                <div class="col-md-10">
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="disabledSelect" class="col-md-2 col-form-label">Disabled select menu (Fieldset disabled)</label>
+                <div class="col-md-10">
+                    <select id="disabledSelect" class="form-control">
+                        <option>Disabled select</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group has-error">
+            <label class="col-md-2 col-form-label" for="inputError">Input with error</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="inputError">
+            </div>
+        </div>
+    </form>
+    <div>
+        <h3>Thay đối kích thước của form-control 
+        </h3>
+    </div>    
+    <form role="form">
+        <div class="form-group">
+            <input type="text" class="form-control input-lg">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control input-sm">
+        </div>
+
+        <div class = "form-group">
+            <input class = "form-control" type = "text" placeholder = "Default input">
+         </div>
+        
+        <div class = "form-group">
+            <select class = "form-control input-lg">
+               <option value = "">.input-lg</option>
+            </select>
+        </div>
+
+        <div class = "form-group">
+            <select class = "form-control input-sm">
+               <option value = "">.input-sm</option>
+            </select>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2">
+               <input type = "text" class = "form-control" placeholder = ".col-lg-2">
+            </div>
+            
+            <div class = "col-lg-3">
+               <input type = "text" class = "form-control" placeholder = ".col-lg-3">
+            </div>
+            
+            <div class = "col-lg-4">
+               <input type = "text" class = "form-control" placeholder = ".col-lg-4">
+            </div>
+         </div>
+    </form>
+
+    <form role = "form">
+        <span>Example of Help Text</span>
+        <input class = "form-control" type = "text" placeholder = "">
+        
+        <span class = "help-block">
+           A longer block of help text that breaks onto a new line and may extend beyond one line.
+        </span>
+         
+     </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
