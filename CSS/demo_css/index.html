@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo vận dụng flexbox và các thuộc tính CSS cơ bản</title>
+    
+    <style>
+        body{
+            font-family: 'Times New Roman';
+        }
+        h3{
+            padding: 5px;
+        }
+        div.item{
+            background-color: darkgoldenrod;
+            width: 32%;
+            margin: 0.5%;
+            border: 2px solid gray;
+            
+        }
+        div.item img{
+            width: 100%;
+        }
+        div.items{
+            display: flex;
+        }
+        ul.menu{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            background-color: beige;
+            display: flex;
+        }
+        ul.menu > li{
+            max-width: 200px;
+            padding: 5px;
+            border-right: 2px solid white;
+        }
+        ul.menu > li > a{
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+        }
+        ul.menu > li > a:hover{
+            background-color: darkblue;
+            color: white;
+
+        }
+        .menu.subcontent{
+            display: none;
+            position: absolute;
+            
+        }
+        .sub:hover .subcontent{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">link 1</a></li>
+            <li class="sub">
+                <a href="#">link 2</a>
+                <ul class="menu subcontent">
+                    <li><a href="#">link 2.1</a></li>
+                    <li><a href="#">link 2.2</a></li>
+                    <li><a href="#">link 2.3</a></li>
+                    <li><a href="#">link 2.4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">link 3</a></li>
+            <li><a href="#">link 4</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="items">
+            <div class="item">
+                <label><h3>Thiết kế web</h3></label>
+                <div>
+                    <img src="iphone-14-pro-max.jpg" alt="iphone">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <label><h3>Thiết kế web</h3></label>
+                <div>
+                    <img src="iphone-14-pro-max.jpg" alt="iphone">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <label><h3>Thiết kế web</h3></label>
+                <div>
+                    <img src="iphone-14-pro-max.jpg" alt="iphone">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <label><h3>Thiết kế web</h3></label>
+                <div>
+                    <img src="iphone-14-pro-max.jpg" alt="iphone">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <label><h3>Thiết kế web</h3></label>
+                <div>
+                    <img src="iphone-14-pro-max.jpg" alt="iphone">
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </section>
+
+
+
+    
+</body>
+</html>
